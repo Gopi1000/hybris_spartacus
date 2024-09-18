@@ -1,0 +1,56 @@
+<ng-container *ngIf="product$ | async as product">
+  <div class="modal-dialog custom-modal-width" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title custom-modal d-flex justify-content-center" id="exampleModalLabel">
+          <b>Product Review</b>
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeDialog()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="review-container">
+          <!-- Overall Rating Section -->
+          <div class="overall-rating">
+            <h2>Overall Rating</h2>
+            <div class="stars">
+              <cx-star-rating [rating]="product?.averageRating ?? 0" [disabled]="true"></cx-star-rating>
+              <span>Total {{ product?.numberOfReviews }} reviews</span>
+            </div>
+          </div>
+
+          <!-- Perticular review Reviews Section -->
+          <div class="review" *ngFor="let review of (review$ | async)?.slice(0, displayedReviews)">
+            <h3>
+              {{ review.headline }}
+            </h3>
+            <div class="stars">
+              <cx-star-rating [rating]="review?.rating ?? 0" [disabled]="true"></cx-star-rating>
+            </div>
+            <div class="reviewer-info">
+              {{ review.principal?.name }} - {{ review.date | date : "medium" }}
+            </div>
+            <p>
+              {{ review.comment }}
+            </p>
+          </div>
+
+          <!-- Show More Button -->
+          <div *ngIf="displayedReviews < ((review$ | async)?.length || 0)">
+            <button type="button" class="btn btn-primary" (click)="showMoreReviews()">
+              Show More Reviews
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="closeDialog()">
+          Close
+        </button>
+      </div> -->
+    </div>
+  </div>
+</ng-container>
