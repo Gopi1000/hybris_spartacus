@@ -59,7 +59,7 @@ export class ReviewModelComponent {
 
   closeDialog(): void {
     this.isVisible = false;
-    console.log("hii");
+    console.log(this.launchDialogService.closeDialog('customDialog'));
     this.launchDialogService.closeDialog('customDialog');
   }
 

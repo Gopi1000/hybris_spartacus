@@ -12,7 +12,7 @@ export class DemooutletComponent {
   before: OutletPosition = OutletPosition.BEFORE;
 
   goRegister() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/login/register']);
   }
 
   customNavigate() {                                                                                                                        

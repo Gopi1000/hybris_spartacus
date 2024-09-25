@@ -117,3 +117,12 @@
   max-width: 600px;
   margin: auto;  /* Ensures modal stays centered */
 }
+
+.no-reviews {
+  display: flex;                     /* Use flexbox */
+  justify-content: center;           /* Center horizontally */
+  align-items: flex-start;           /* Align items at the top */
+  height: 100vh;                    /* Full viewport height */
+  text-align: center;                /* Center text inside the div */
+  padding-top: 20px;  
+}

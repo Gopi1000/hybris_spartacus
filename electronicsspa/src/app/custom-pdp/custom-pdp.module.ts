@@ -7,6 +7,7 @@ import {
   IconModule,
   LaunchDialogService,
   DIALOG_TYPE,
+  LayoutConfig,
 } from '@spartacus/storefront';
 import { CustomComponentComponent } from './custom-component/custom-component.component';
 import { CustomProductIntroComponent } from './custom-product-intro/custom-product-intro.component';
@@ -39,6 +40,13 @@ import { ReviewModelComponent } from './review-model/review-model.component';
         },
       },
     } as CmsConfig),
+    ConfigModule.withConfig({
+      layoutSlots: {
+        LandingPage2Template: {
+          slots: ['Section1', 'Section2A', 'Section2B', 'Section3', 'Section4'],
+        },
+      },
+    } as LayoutConfig),
   ],
 
   providers: [
@@ -55,4 +63,4 @@ import { ReviewModelComponent } from './review-model/review-model.component';
     }),
   ],
 })
-export class CustomPdpModule {}
+export class CustomPdpModule { }
