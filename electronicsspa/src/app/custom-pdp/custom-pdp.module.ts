@@ -13,6 +13,9 @@ import { CustomComponentComponent } from './custom-component/custom-component.co
 import { CustomProductIntroComponent } from './custom-product-intro/custom-product-intro.component';
 import { CustomProductSummaryComponent } from './custom-product-summary/custom-product-summary.component';
 import { ReviewModelComponent } from './review-model/review-model.component';
+import { FormErrorsModule } from '@spartacus/storefront';
+import { CustomregisterComponent } from '../customregister/customregister.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,8 @@ import { ReviewModelComponent } from './review-model/review-model.component';
 
   imports: [
     BrowserModule,
+    FormsModule,
+    FormErrorsModule,
     CommonModule,
     StarRatingModule,
     IconModule,
@@ -37,6 +42,9 @@ import { ReviewModelComponent } from './review-model/review-model.component';
         },
         PageTitleComponent: {
           component: CustomComponentComponent,
+        },
+        RegisterCustomerComponent: {
+          component: CustomregisterComponent,
         },
       },
     } as CmsConfig),

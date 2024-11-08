@@ -11,10 +11,14 @@ import { RouterModule } from "@angular/router";
 import { UrlModule } from "@spartacus/core";
 import { OutletRefModule } from "@spartacus/storefront";
 import { OutletsModule } from "./spartacus/features/outlets/outlets.module";
+import { CustomregisterComponent } from './customregister/customregister.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomregisterComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import { OutletsModule } from "./spartacus/features/outlets/outlets.module";
     OutletsModule,
     RouterModule,
     UrlModule,
-    OutletRefModule
+    OutletRefModule,
+    FormsModule
   ],
   providers: [provideHttpClient(withFetch(), withInterceptorsFromDi())],
   bootstrap: [AppComponent]

@@ -4,10 +4,11 @@ import { DemooutletComponent } from './demooutlet/demooutlet.component';
 import { OutletRefModule } from '@spartacus/storefront';
 import { UrlModule } from '@spartacus/core';
 import { RouterModule } from '@angular/router';
+import { ProductviewComponent } from './productview/productview.component';
 
 @NgModule({
-  declarations: [DemooutletComponent],
+  declarations: [DemooutletComponent, ProductviewComponent],
   imports: [CommonModule, OutletRefModule, UrlModule, RouterModule],
-  exports: [DemooutletComponent]
+  exports: [DemooutletComponent, ProductviewComponent]
 })
-export class OutletsModule {}
+export class OutletsModule { }

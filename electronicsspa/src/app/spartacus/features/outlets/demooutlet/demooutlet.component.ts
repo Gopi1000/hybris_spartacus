@@ -18,4 +18,8 @@ export class DemooutletComponent {
   customNavigate() {                                                                                                                        
     this.router.navigate(['/sale']);
   }
+
+  onSubmit(){
+    console.log("submitted")
+  }
 }
