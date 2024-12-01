@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class StaticPageComponent {
 
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   
-  
-
 }

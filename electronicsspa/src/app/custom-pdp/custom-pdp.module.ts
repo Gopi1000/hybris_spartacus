@@ -16,6 +16,10 @@ import { ReviewModelComponent } from './review-model/review-model.component';
 import { FormErrorsModule } from '@spartacus/storefront';
 import { CustomregisterComponent } from '../customregister/customregister.component';
 import { FormsModule } from '@angular/forms';
+import { CustomsectionComponent } from './customsection/customsection.component';
+import { CustomcarouselComponent } from '../spartacus/features/outlets/customcarousel/customcarousel.component';
+import { StaticPageComponent } from '../spartacus/features/custom-routing/static-page/static-page.component';
+import { CustomfootercomponentComponent } from './customfootercomponent/customfootercomponent.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     CustomProductSummaryComponent,
     CustomComponentComponent,
     ReviewModelComponent,
+    CustomsectionComponent,
   ],
 
   imports: [
@@ -46,14 +51,32 @@ import { FormsModule } from '@angular/forms';
         RegisterCustomerComponent: {
           component: CustomregisterComponent,
         },
+        FooterNavigationComponent: {
+          component: StaticPageComponent,
+        },
+        stopperstopfootparagraphcomponent: {
+          component: CustomfootercomponentComponent,
+        },
+        // ExportOrderEntriesComponent: {
+        //   component: CustomsectionComponent,
+        // },
       },
     } as CmsConfig),
     ConfigModule.withConfig({
       layoutSlots: {
-        LandingPage2Template: {
-          slots: ['Section1', 'Section2A', 'Section2B', 'Section3', 'Section4'],
+        LandingPage2Template:{
+          slots: ['Section1', 'Section2A', 'Section2B', 'Section2c','Section3', 'Section4','Section5'],
         },
       },
+    } as LayoutConfig),
+
+    ConfigModule.withConfig({
+      layoutSlots: {
+        CartPageTemplate: {
+          slots: ['EmptyCartMiddleContent','BottomContentSlot','TopContent','CenterRightContentSlot','CenterLeftContentSlot','HeaderLinks','TopHeaderSlot'],
+        },
+      },
+      
     } as LayoutConfig),
   ],
 

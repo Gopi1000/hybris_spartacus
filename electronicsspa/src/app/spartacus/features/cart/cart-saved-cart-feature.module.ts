@@ -12,7 +12,7 @@ import { CmsConfig, I18nConfig, provideConfig } from "@spartacus/core";
     featureModules: {
       [CART_SAVED_CART_FEATURE]: {
         module: () =>
-          import('@spartacus/cart/saved-cart').then((m) => m.SavedCartModule),
+           import('@spartacus/cart/saved-cart').then((m) => m.SavedCartModule),
       },
     }
   }),

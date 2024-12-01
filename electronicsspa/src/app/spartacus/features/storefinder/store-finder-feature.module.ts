@@ -12,7 +12,9 @@ import { StoreFinderRootModule, STORE_FINDER_FEATURE } from "@spartacus/storefin
     featureModules: {
       [STORE_FINDER_FEATURE]: {
         module: () =>
-          import('@spartacus/storefinder').then((m) => m.StoreFinderModule),
+        //  import('@spartacus/storefinder').then((m) => m.StoreFinderModule),
+        import('@spartacus/user/account').then((m) => m.UserAccountModule),
+
       },
     }
   }),

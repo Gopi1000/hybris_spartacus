@@ -19,11 +19,12 @@ export class CustomregisterComponent {
   //   console.log("submitted..")
   // }
 
-  public user = {
+  user = {
     titleCode: '',
     firstName: '',
     lastName: '',
     uid: '',
+    secondarymail: '',
     password: '',
     confirmPassword: '',
   };

@@ -13,6 +13,7 @@ import { ProductImageZoomRootModule, PRODUCT_IMAGE_ZOOM_FEATURE } from "@spartac
       [PRODUCT_IMAGE_ZOOM_FEATURE]: {
         module: () =>
           import('@spartacus/product/image-zoom').then((m) => m.ProductImageZoomModule),
+       
       },
     }
   }),

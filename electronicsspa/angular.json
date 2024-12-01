@@ -42,14 +42,14 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
               "src/styles/spartacus/user.scss",
               "src/styles/spartacus/cart.scss",
               "src/styles/spartacus/order.scss",
               "src/styles/spartacus/checkout.scss",
               "src/styles/spartacus/storefinder.scss",
               "src/styles/spartacus/asm.scss",
-              "src/styles/spartacus/product.scss"
+              "src/styles/spartacus/product.scss",
+              "src/styles.scss"
             ],
             "scripts": [],
             "stylePreprocessorOptions": {
@@ -119,7 +119,6 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
               "src/styles/spartacus/user.scss",
               "src/styles/spartacus/cart.scss",
               "src/styles/spartacus/order.scss",
@@ -127,6 +126,7 @@
               "src/styles/spartacus/storefinder.scss",
               "src/styles/spartacus/asm.scss",
               "src/styles/spartacus/product.scss"
+              
             ],
             "scripts": [],
             "stylePreprocessorOptions": {

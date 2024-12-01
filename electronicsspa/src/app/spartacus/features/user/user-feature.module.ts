@@ -16,6 +16,7 @@ import { UserProfileRootModule, USER_PROFILE_FEATURE } from "@spartacus/user/pro
       [USER_ACCOUNT_FEATURE]: {
         module: () =>
           import('@spartacus/user/account').then((m) => m.UserAccountModule),
+       // import('@spartacus/cart/saved-cart').then((m) => m.SavedCartModule),
       },
     }
   }),

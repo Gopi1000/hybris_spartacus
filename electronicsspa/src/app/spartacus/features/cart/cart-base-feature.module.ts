@@ -20,7 +20,8 @@ import { CmsConfig, I18nConfig, provideConfig } from "@spartacus/core";
     featureModules: {
       [MINI_CART_FEATURE]: {
         module: () =>
-          import('@spartacus/cart/base/components/mini-cart').then((m) => m.MiniCartModule),
+         import('@spartacus/cart/base/components/mini-cart').then((m) => m.MiniCartModule),
+      //  import('@spartacus/user/account').then((m) => m.UserAccountModule),
       },
     }
   }),
@@ -28,7 +29,9 @@ import { CmsConfig, I18nConfig, provideConfig } from "@spartacus/core";
     featureModules: {
       [ADD_TO_CART_FEATURE]: {
         module: () =>
-          import('@spartacus/cart/base/components/add-to-cart').then((m) => m.AddToCartModule),
+         import('@spartacus/cart/base/components/add-to-cart').then((m) => m.AddToCartModule),
+        
+        
       },
     }
   }),

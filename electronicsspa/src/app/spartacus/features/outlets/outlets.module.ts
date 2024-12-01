@@ -5,10 +5,11 @@ import { OutletRefModule } from '@spartacus/storefront';
 import { UrlModule } from '@spartacus/core';
 import { RouterModule } from '@angular/router';
 import { ProductviewComponent } from './productview/productview.component';
+import { CustomcarouselComponent } from './customcarousel/customcarousel.component';
 
 @NgModule({
-  declarations: [DemooutletComponent, ProductviewComponent],
+  declarations: [DemooutletComponent, ProductviewComponent, CustomcarouselComponent],
   imports: [CommonModule, OutletRefModule, UrlModule, RouterModule],
-  exports: [DemooutletComponent, ProductviewComponent]
+  exports: [DemooutletComponent, ProductviewComponent, CustomcarouselComponent]
 })
 export class OutletsModule { }
