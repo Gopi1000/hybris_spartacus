@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product } from '@spartacus/core';
 import { CurrentProductService } from '@spartacus/storefront';
 import { Observable } from 'rxjs';
@@ -8,15 +8,15 @@ import { Observable } from 'rxjs';
   templateUrl: './custom-component.component.html',
   styleUrl: './custom-component.component.scss'
 })
-export class CustomComponentComponent implements OnInit  {
+export class CustomComponentComponent implements OnInit {
 
   product$: Observable<Product | null> =
     this.currentProductService.getProduct();
 
-    constructor(private currentProductService: CurrentProductService){ }
+  constructor(private currentProductService: CurrentProductService) { }
 
-    ngOnInit(): void {
+  ngOnInit(): void {
 
-    }
+  }
 
 }

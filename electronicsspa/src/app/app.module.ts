@@ -1,4 +1,4 @@
-import { provideHttpClient, withFetch, withInterceptorsFromDi } from "@angular/common/http";
+import { HttpClientModule, provideHttpClient, withFetch, withInterceptorsFromDi } from "@angular/common/http";
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { EffectsModule } from "@ngrx/effects";
@@ -31,7 +31,8 @@ import { FormsModule } from "@angular/forms";
     RouterModule,
     UrlModule,
     OutletRefModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [provideHttpClient(withFetch(), withInterceptorsFromDi())],
   bootstrap: [AppComponent]

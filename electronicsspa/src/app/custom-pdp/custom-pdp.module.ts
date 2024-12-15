@@ -54,9 +54,13 @@ import { CustomfootercomponentComponent } from './customfootercomponent/customfo
         FooterNavigationComponent: {
           component: StaticPageComponent,
         },
+        // CategoryNavigationComponent: {
+        //   component: StaticPageComponent,
+        // },
         stopperstopfootparagraphcomponent: {
           component: CustomfootercomponentComponent,
         },
+
         // ExportOrderEntriesComponent: {
         //   component: CustomsectionComponent,
         // },
@@ -64,8 +68,8 @@ import { CustomfootercomponentComponent } from './customfootercomponent/customfo
     } as CmsConfig),
     ConfigModule.withConfig({
       layoutSlots: {
-        LandingPage2Template:{
-          slots: ['Section1', 'Section2A', 'Section2B', 'Section2c','Section3', 'Section4','Section5'],
+        LandingPage2Template: {
+          slots: ['Section1', 'Section2A', 'Section2B', 'Section2c', 'Section3', 'Section4', 'Section5'],
         },
       },
     } as LayoutConfig),
@@ -73,10 +77,10 @@ import { CustomfootercomponentComponent } from './customfootercomponent/customfo
     ConfigModule.withConfig({
       layoutSlots: {
         CartPageTemplate: {
-          slots: ['EmptyCartMiddleContent','BottomContentSlot','TopContent','CenterRightContentSlot','CenterLeftContentSlot','HeaderLinks','TopHeaderSlot'],
+          slots: ['EmptyCartMiddleContent', 'BottomContentSlot', 'TopContent', 'CenterRightContentSlot', 'CenterLeftContentSlot', 'HeaderLinks', 'TopHeaderSlot'],
         },
       },
-      
+
     } as LayoutConfig),
   ],
 

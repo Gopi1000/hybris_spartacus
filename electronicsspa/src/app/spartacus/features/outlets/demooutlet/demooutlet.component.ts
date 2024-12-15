@@ -8,18 +8,18 @@ import { OutletPosition } from '@spartacus/storefront';
   styleUrl: './demooutlet.component.scss',
 })
 export class DemooutletComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
   before: OutletPosition = OutletPosition.BEFORE;
 
   goRegister() {
     this.router.navigate(['/login/register']);
   }
 
-  customNavigate() {                                                                                                                        
+  customNavigate() {
     this.router.navigate(['/sale']);
   }
 
-  onSubmit(){
+  onSubmit() {
     console.log("submitted")
   }
 }

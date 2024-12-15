@@ -11,8 +11,8 @@ import { filter, Observable, switchMap } from 'rxjs';
 export class ReviewModelComponent {
 
   product$: Observable<Product | null> = this.currentProductService.getProduct();
- iconType = ICON_TYPE;
- isVisible: boolean = false;
+  iconType = ICON_TYPE;
+  isVisible: boolean = false;
 
   review$ = this.product$.pipe(
     filter((product): product is Product => !!product?.code), // Ensure product is not null

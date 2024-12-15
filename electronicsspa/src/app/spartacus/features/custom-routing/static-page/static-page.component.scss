@@ -1,280 +1,88 @@
-/* General footer styles */
 .footer {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: Arial, sans-serif;
-    padding: 20px 40px;
-  }
-  
-  .footer h4 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .footer a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Top section (Payment, Contact, Download, Verification) */
-  .footer-top {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .footer-top div {
-    flex: 1 1 calc(25% - 20px);
-    margin: 10px;
-  }
-  
-  .footer-top img {
-    max-width: 100px;
-    margin-right: 10px;
-    vertical-align: middle;
-  }
-  
-  /* Middle section (Social Media) */
-  .footer-middle {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .footer-middle h4 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-middle a {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .footer-middle img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  /* Services section (Exchange, Payment, Pickup, Authentic) */
-  .footer-services {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .footer-services .service {
-    text-align: center;
-    flex: 1;
-    margin: 0 10px;
-  }
-  
-  .footer-services .service img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-services p {
-    font-size: 14px;
-    margin: 0;
-  }
-  
-  /* Bottom section (Customer, Categories, Policies, etc.) */
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .footer-column {
-    flex: 1 1 calc(20% - 20px);
-    margin: 10px;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 5px;
-  }
-  
-  /* Footer credits */
-  .footer-credits {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  
-  .footer-credits div {
-    margin-top: 10px;
-  }
-  
-  .footer-credits a {
-    color: #555;
-    margin: 0 5px;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .footer-top div,
-    .footer-column {
-      flex: 1 1 100%;
-      text-align: center;
-    }
-  
-    .footer-services {
-      flex-direction: column;
-    }
-  
-    .footer-services .service {
-      margin-bottom: 20px;
-    }
-  
-    .footer-middle h4 {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .footer-middle img {
-      width: 25px;
-      height: 25px;
-    }
-  
-    .footer-services .service img {
-      width: 40px;
-      height: 40px;
-    }
-  }
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 20px 40px;
+}
 
-  /* General styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-  }
-  
-  /* Popular Search section */
-  .popular-search {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .popular-search h3 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .search-links a {
-    text-decoration: none;
-    color: #020202;
-    font-weight: 500;
-    margin-right: 10px;
-  }
-  
-  .search-links a:hover {
-    text-decoration: underline;
-    color: #000000;
-  }
-  
-  /* Unique Offerings section */
-  .unique-offerings {
-    padding: 20px;
-    background-color: #ffffff;
-    border-top: 1px solid #e0e0e0;
-  }
-  
-  .unique-offerings h3 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-  }
-  
-  .offerings-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .offering-item {
-    text-align: center;
-    max-width: 150px;
-    padding: 10px;
-  }
-  
-  .offering-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .offering-item p {
-    font-size: 14px;
-    color: #555;
-    margin: 0;
-  }
-  
-  .offering-item p:hover {
-    color: #000;
-    font-weight: bold;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .offerings-list {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .offering-item {
-      max-width: 100%;
-    }
-  
-    .search-links a {
-      display: block;
-      margin-bottom: 5px;
-    }
-  }
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .unique-header {
-    text-align: center;
-    margin: 20px 0; /* Adds space around the header */
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.footer-column {
+  flex: 1 1 calc(20% - 20px);
+  margin: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+/* Popular Search section */
+.popular-search {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/*new section */
+.outer_info{
+  background-color: #f8f8f8;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 20px;
+  .border-left{
+    border-left: 1px solid #d9d9d9;
   }
-  
-  .unique-header h3 {
-    font-size: 40px; /* Adjust font size */
-    font-weight: 400; /* Light weight for "Our Unique" */
-    color: #555; /* Soft gray for the text */
-  }
-  
-  .unique-header h3 span {
-    font-weight: 700; /* Bold weight for "Offerings" */
-    color: #000; /* Black color for emphasis */
-  }
-  
-  /* Optional: Add spacing or additional alignment for responsiveness */
-  .unique-header h3 {
-    line-height: 1.4; /* Improves readability */
-  }
-  
-  @media (max-width: 768px) {
-    .unique-header h3 {
-      font-size: 200px; /* Adjust font size for smaller screens */
+  .inner_wrapper{
+    padding: 30px 0 30px 10px;
+    h4{
+      font-size: 15px;
+      color: #000;
+      font-weight: bold;
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      li{
+        float: left;
+        width: 100%;
+        margin-bottom: 5px;
+        a{
+          display: inline-block;
+          color: #333;
+          font-size: 13px;
+          &:hover {
+            color: #1428a0;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
-  
-  
-  
+}

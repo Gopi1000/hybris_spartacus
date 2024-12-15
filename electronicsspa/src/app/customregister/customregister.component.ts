@@ -48,7 +48,7 @@ export class CustomregisterComponent {
   //     console.log('Form is invalid');
   //   }
   // }
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router) { }
 
   submit(form: NgForm) {
     if (form.valid) {

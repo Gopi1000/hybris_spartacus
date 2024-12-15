@@ -10,7 +10,7 @@ export class AuthService {
   private registerUrl =
     'https://localhost:9002/occ/v2/electronics-spa/users?lang=en&curr=USD';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   // Fetch OAuth Token
   getToken(): Observable<any> {

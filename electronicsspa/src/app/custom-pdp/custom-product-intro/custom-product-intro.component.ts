@@ -11,14 +11,11 @@ import { filter, Observable, switchMap } from 'rxjs';
 
 export class CustomProductIntroComponent implements OnInit {
 
+  product$: Observable<Product | null> = this.currentProductService.getProduct();
 
-product$:Observable<Product|null>=this.currentProductService.getProduct();
+  constructor(private currentProductService: CurrentProductService) { }
 
+  ngOnInit(): void {
 
-
-constructor(private currentProductService: CurrentProductService) { }
-
-ngOnInit(): void {
-
-}
+  }
 }

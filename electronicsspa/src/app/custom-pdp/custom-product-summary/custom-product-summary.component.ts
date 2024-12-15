@@ -14,7 +14,6 @@ import { ReviewModelComponent } from '../review-model/review-model.component';
   styleUrl: './custom-product-summary.component.scss',
 })
 export class CustomProductSummaryComponent {
-  
   iconTypes = ICON_TYPE;
 
   product$: Observable<Product | null> =
@@ -25,7 +24,7 @@ export class CustomProductSummaryComponent {
     private launchDialogService: LaunchDialogService,
     private elementRef: ElementRef,
     private vcr: ViewContainerRef
-  ) {}
+  ) { }
 
   // @Input() max: number = 10;
   // quantity: number = 1;
@@ -53,15 +52,14 @@ export class CustomProductSummaryComponent {
 
   openDialog(): void {
     const dialog = this.launchDialogService.openDialog(
-      'customDialog',                 // The identifier for the dialog
-      this.elementRef.nativeElement,   // Element reference for dialog positioning
-      this.vcr                         // ViewContainerRef where the dialog will be injected
+      'customDialog', // The identifier for the dialog
+      this.elementRef.nativeElement, // Element reference for dialog positioning
+      this.vcr // ViewContainerRef where the dialog will be injected
     );
 
-     // Optional: Handle dialog result (if any)
-     dialog?.subscribe(result => {
+    // Optional: Handle dialog result (if any)
+    dialog?.subscribe((result) => {
       console.log('Dialog closed', result);
     });
-
   }
 }

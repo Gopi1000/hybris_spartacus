@@ -22,7 +22,7 @@
 
   <div>
     <label for="lastName">Last Name</label>
-    <input id="lastName" name="lastName" type="text" [(ngModel)]="user.lastName" placeholder="Last name" required/>
+    <input id="lastName" name="lastName" type="text" [(ngModel)]="user.lastName" placeholder="Last name" required />
     <div *ngIf="registrationForm.submitted" class="error">
       Last Name is required
     </div>
@@ -30,7 +30,7 @@
 
   <div>
     <label for="uid">Email</label>
-    <input id="uid" name="uid" type="uid" [(ngModel)]="user.uid" placeholder="Email address" required email/>
+    <input id="uid" name="uid" type="uid" [(ngModel)]="user.uid" placeholder="Email address" required email />
     <div *ngIf="registrationForm.submitted" class="error">
       Valid Email is required
     </div>
@@ -38,7 +38,8 @@
 
   <div>
     <label for="uid">Secondary Email (optional)</label>
-    <input id="secondarymail" name="secondarymail" type="secondarymail" [(ngModel)]="user.secondarymail" placeholder="Email address" email/>
+    <input id="secondarymail" name="secondarymail" type="secondarymail" [(ngModel)]="user.secondarymail"
+      placeholder="Email address" email />
   </div>
   <div>
     <label for="password">Password</label>
@@ -71,7 +72,7 @@
     </div>
   </div>
 
-   <!-- <div>
+  <!-- <div>
     <input type="checkbox" id="marketingConsent" name="marketingConsent">
     <label for="marketingConsent">
       This is a sample marketing consent description that will need to be updated or replaced, based on the valid registration consent required.
